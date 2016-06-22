@@ -1,18 +1,18 @@
 {
   "name": "QuickShotUtils",
   "version": "0.1.0",
-  "summary": "A short description of QuickShotUtils.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/QuickShotUtils",
+  "summary": "QuickShotUtils are a couple of utility Classes and extensions.",
+  "description": "TODO: Add long description of the pod here.\n\nQuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.\n\nFeatures\n- [x] it does stuff and has stuf\n- [x] decouples some other stuf",
+  "homepage": "https://github.com/pmlbrito/QuickShotUtils",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Pedro Brito": "pedro.brito@premium-minds.com"
+    "Pedro Brito": "pedroml.brito@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/QuickShotUtils.git",
+    "git": "https://github.com/pmlbrito/QuickShotUtils.git",
     "tag": "0.1.0"
   },
   "platforms": {

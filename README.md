@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* ARC
+* iOS8
 
 ## Installation
 
@@ -20,9 +22,13 @@ it, simply add the following line to your Podfile:
 pod "QuickShotUtils"
 ```
 
+## Example Project
+
+An example project is included with this repo.  To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 ## Author
 
-Pedro Brito, pedro.brito@premium-minds.com
+Pedro Brito, pedroml.brito@gmail.com
 
 ## License
 

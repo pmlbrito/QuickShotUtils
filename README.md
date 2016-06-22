@@ -8,7 +8,7 @@
  QuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.
  
  
-# Utility extensions to:
+## Utility extensions to:
  * Math
  * String
  * UIColor
@@ -17,10 +17,10 @@
  * UIViewController
  * UINavigationController
  
-# UI View Subclasses:
+## UI View Subclasses:
  * QSUFloatingLabelTextField
  
-# Utility classes and methods:
+## Utility classes and methods:
  * isNilOrEmpty
  * QSUDeviceExtension
  * QSUTimeUtils

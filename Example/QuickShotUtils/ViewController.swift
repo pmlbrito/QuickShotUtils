@@ -9,9 +9,17 @@
 import UIKit
 import QuickShotUtils
 
-class ViewController: UIViewController {
+class ViewController: QSUBaseViewController {
 
   let valLabel = UILabel(frame: CGRectMake(10, 20, 200, 30))
+  
+  init() {
+    super.init()
+  }
+  
+  required convenience init(coder: NSCoder) {
+    self.init();
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,6 +35,8 @@ class ViewController: UIViewController {
     toggleButton.setTitleColor(UIColor.redColor(), forState: .Normal)
     toggleButton.addTarget(self, action: #selector(ViewController.toggleLabelValue), forControlEvents: .TouchUpInside)
     view.addSubview(toggleButton)
+    
+    self.view.backgroundColor = UIColor.whiteColor();
   }
   
   func toggleLabelValue() {

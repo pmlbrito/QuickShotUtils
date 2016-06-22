@@ -13,11 +13,11 @@ enum ViewControllerPresentationType: String {
   case PushStack, Modal, ReplaceNavigation, ReplaceAtRoot
 }
 
-class QSUBaseViewController: UIViewController
+public class QSUBaseViewController: UIViewController
 {
   
   // MARK: Object lifecycle
-  init(_ coder: NSCoder? = nil) {
+  public init(_ coder: NSCoder? = nil) {
     if let coder = coder {
       super.init(coder: coder)!
     } else {
@@ -25,16 +25,16 @@ class QSUBaseViewController: UIViewController
     }
   }
   
-  required convenience init(coder: NSCoder) {
+  required convenience public init(coder: NSCoder) {
     self.init(coder)
   }
   
   //MARK: ViewController common variables
-  var didSetupConstraints = false;
+
   
   // MARK: View lifecycle
   
-  override func viewDidLoad() {
+  override public func viewDidLoad() {
     super.viewDidLoad()
   }
   

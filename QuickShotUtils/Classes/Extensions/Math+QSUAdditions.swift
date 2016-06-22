@@ -19,7 +19,7 @@ public extension CGFloat {
   }
 }
 
-extension Double {
+public extension Double {
   /// Rounds the double to decimal places value
   func roundToDecimals(decimals:Int) -> Double {
     let divisor = pow(10.0, Double(decimals))

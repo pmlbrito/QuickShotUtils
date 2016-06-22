@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIViewController {
+public extension UIViewController {
   
   class func fromClassName(className : String) -> UIViewController {
     var realClassName = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + className

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
   
   var left : CGFloat {
     set { self.frame.origin.x = newValue }

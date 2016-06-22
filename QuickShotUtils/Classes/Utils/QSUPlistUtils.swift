@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QSUPlistUtils {
+public class QSUPlistUtils {
   
   static func getPListFileForBundleConfigKey(filenameKey: String) -> NSDictionary? {
     let path = NSBundle.mainBundle().pathForResource(filenameKey, ofType: "plist");

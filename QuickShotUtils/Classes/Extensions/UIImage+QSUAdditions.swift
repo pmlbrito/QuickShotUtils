@@ -9,9 +9,7 @@
 import UIKit
 
 
-private let lock = NSRecursiveLock()
-
-extension UIImage {
+public extension UIImage {
   public func imageRotatedByDegrees(degrees: CGFloat, flip: Bool) -> UIImage {
     //    let radiansToDegrees: (CGFloat) -> CGFloat = {
     //      return $0 * (180.0 / CGFloat(M_PI))

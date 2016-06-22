@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QSUDateUtils {
+public class QSUDateUtils {
   static var SimpleDateFormatter : NSDateFormatter {
     let dtf = NSDateFormatter()
     dtf.dateFormat = "yyyy-MM-dd"
@@ -36,7 +36,7 @@ class QSUDateUtils {
   }
 }
 
-class QSUTimeZoneUtils {
+public class QSUTimeZoneUtils {
   
   // "GMT-2"
   static func getAbbreviatedTimeZone() -> String { return NSTimeZone.localTimeZone().abbreviation ?? "" }

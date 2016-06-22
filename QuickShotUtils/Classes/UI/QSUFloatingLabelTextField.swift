@@ -9,14 +9,14 @@
 
 import UIKit
 
-@IBDesignable class QSUFloatingLabelTextField: UITextField {
+@IBDesignable public class QSUFloatingLabelTextField: UITextField {
   let animationDuration = 0.3
   var title = UILabel()
   
   let defaultPadding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20);
   
   // MARK:- Properties
-  override var accessibilityLabel:String! {
+  override public var accessibilityLabel:String! {
     get {
       if isNilOrEmpty(text) {
         return title.text
@@ -29,14 +29,14 @@ import UIKit
     }
   }
   
-  override var placeholder:String? {
+  override public var placeholder:String? {
     didSet {
       title.text = placeholder
       title.sizeToFit()
     }
   }
   
-  override var attributedPlaceholder:NSAttributedString? {
+  override public var attributedPlaceholder:NSAttributedString? {
     didSet {
       title.text = attributedPlaceholder?.string
       title.sizeToFit()
@@ -77,7 +77,7 @@ import UIKit
   }
   
   // MARK:- Init
-  required init(coder aDecoder:NSCoder) {
+  required public init(coder aDecoder:NSCoder) {
     super.init(coder:aDecoder)!
     setup()
   }
@@ -88,7 +88,7 @@ import UIKit
   }
   
   // MARK:- Overrides
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
     setTitlePositionForTextAlignment()
     let isResp = isFirstResponder()
@@ -107,7 +107,7 @@ import UIKit
     }
   }
   
-  override func textRectForBounds(bounds:CGRect) -> CGRect {
+  override public func textRectForBounds(bounds:CGRect) -> CGRect {
     var r = super.textRectForBounds(bounds);
     if !isNilOrEmpty(text) {
       var top = ceil(title.font.lineHeight + hintYPadding)
@@ -118,7 +118,7 @@ import UIKit
     return UIEdgeInsetsInsetRect(r, defaultPadding)
   }
   
-  override func editingRectForBounds(bounds:CGRect) -> CGRect {
+  override public func editingRectForBounds(bounds:CGRect) -> CGRect {
     var r = super.editingRectForBounds(bounds)
     if !isNilOrEmpty(text) {
       var top = ceil(title.font.lineHeight + hintYPadding)
@@ -129,7 +129,7 @@ import UIKit
     return UIEdgeInsetsInsetRect(r, defaultPadding)
   }
   
-  override func clearButtonRectForBounds(bounds:CGRect) -> CGRect {
+  override public func clearButtonRectForBounds(bounds:CGRect) -> CGRect {
     var r = super.clearButtonRectForBounds(bounds)
     if !isNilOrEmpty(text) {
       var top = ceil(title.font.lineHeight + hintYPadding)

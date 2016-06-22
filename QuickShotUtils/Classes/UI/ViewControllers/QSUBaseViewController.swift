@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum ViewControllerPresentationType: String {
+public enum ViewControllerPresentationType: String {
   case PushStack, Modal, ReplaceNavigation, ReplaceAtRoot
 }
 

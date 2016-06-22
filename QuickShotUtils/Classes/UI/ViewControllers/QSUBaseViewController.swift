@@ -38,14 +38,14 @@ public class QSUBaseViewController: UIViewController
     super.viewDidLoad()
   }
   
-  func setNavBarTitle(title : String) {
+  public func setNavBarTitle(title : String) {
     let navBar = navigationController?.navigationBar;
     if(navBar != nil){
       navBar!.topItem!.title = title
     }
   }
   
-  func hideNavigationBar(hide : Bool) {
+  public func hideNavigationBar(hide : Bool) {
     let navBar = navigationController?.navigationBar;
     if navBar != nil {
       navBar!.hidden = hide
@@ -53,7 +53,7 @@ public class QSUBaseViewController: UIViewController
   }
   
   
-  func hideNavigationBackButtonTitle() {
+  public func hideNavigationBackButtonTitle() {
     self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
   }
   
@@ -62,7 +62,7 @@ public class QSUBaseViewController: UIViewController
   
   
   //MARK: Base navigation actions
-  func transtitionToNextViewController(fromViewController: UIViewController, destinationViewController: UIViewController?, transitionType: ViewControllerPresentationType?){
+  public func transtitionToNextViewController(fromViewController: UIViewController, destinationViewController: UIViewController?, transitionType: ViewControllerPresentationType?){
     if transitionType != nil && destinationViewController != nil {
       //(destinationViewController as! RFBaseViewController).menuDelegate = (fromViewController as! RFBaseViewController).menuDelegate;
       
@@ -94,26 +94,26 @@ public class QSUBaseViewController: UIViewController
     }
   }
   
-  func showProgressIndicator(){
+  public func showProgressIndicator(){
     //old version
     //    RFProgressIndicatorView.show("", animated: true);
     QSUBasicLoadingIndicator.shared.show();
   }
   
-  func showProgressIndicatorWithText(indicatorText: String, animated: Bool){
+  public func showProgressIndicatorWithText(indicatorText: String, animated: Bool){
     //old version
     //    RFProgressIndicatorView.show(indicatorText, animated: animated);
     QSUBasicLoadingIndicator.shared.show();
   }
   
-  func hideProgressIndicator(){
+  public func hideProgressIndicator(){
     //old version
     //    RFProgressIndicatorView.hide();
     QSUBasicLoadingIndicator.shared.hide();
   }
   
   var backgroundImage: UIImageView?;
-  func setBackgroundView(imageName: String){
+  public func setBackgroundView(imageName: String){
     //setup background
     let screenSize: CGRect = UIScreen.mainScreen().bounds
     
@@ -134,7 +134,7 @@ public class QSUBaseViewController: UIViewController
     self.view.insertSubview(backgroundImage!, atIndex: 0);
   }
   
-  func doOpenURLIfPossible(urlToOpen: NSURL?){
+  public func doOpenURLIfPossible(urlToOpen: NSURL?){
     if let url: NSURL = urlToOpen {
       if UIApplication.sharedApplication().canOpenURL(url) {
         UIApplication.sharedApplication().openURL(url);
@@ -142,11 +142,11 @@ public class QSUBaseViewController: UIViewController
     }
   }
   
-  func doNothing() {
+  public func doNothing() {
     /// selector used to do nothing :)
   }
   
-  func hideNavigationBarSeparator(){
+  public func hideNavigationBarSeparator(){
     if(self.navigationController != nil){
       for parent in self.navigationController!.navigationBar.subviews {
         for childView in parent.subviews {

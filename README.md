@@ -1,9 +1,9 @@
 # QuickShotUtils
 
-[![CI Status](http://img.shields.io/travis/Pedro Brito/QuickShotUtils.svg?style=flat)](https://travis-ci.org/Pedro Brito/QuickShotUtils)
-[![Version](https://img.shields.io/cocoapods/v/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)
-[![License](https://img.shields.io/cocoapods/l/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)
-[![Platform](https://img.shields.io/cocoapods/p/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)
+<!--[![CI Status](http://img.shields.io/travis/Pedro Brito/QuickShotUtils.svg?style=flat)](https://travis-ci.org/Pedro Brito/QuickShotUtils)-->
+<!--[![Version](https://img.shields.io/cocoapods/v/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
+<!--[![License](https://img.shields.io/cocoapods/l/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
+<!--[![Platform](https://img.shields.io/cocoapods/p/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
 
 ## Example
 

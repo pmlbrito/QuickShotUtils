@@ -22,7 +22,7 @@ QuickShotUtils is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "QuickShotUtils", :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
+pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
 ```
 
 ## Example Project

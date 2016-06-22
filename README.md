@@ -5,9 +5,12 @@
 <!--[![License](https://img.shields.io/cocoapods/l/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
 <!--[![Platform](https://img.shields.io/cocoapods/p/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
 
+
+ QuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.
+ 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+ To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 * ARC
@@ -19,7 +22,7 @@ QuickShotUtils is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "QuickShotUtils"
+pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
 ```
 
 ## Example Project

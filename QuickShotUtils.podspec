@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QuickShotUtils'
   s.version          = '0.1.0'
-  s.summary          = 'QuickShotUtils are a couple of utility Classes and extensions.'
+  s.summary          = 'QuickShotUtils are a couple of iOS Swift utility Classes and extensions.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
 
-QuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.
+QuickShotUtils are a couple of iOS Swift Classes and extensions that add some specific quick custom behaviour to already existing code base.
 
 Features
 - [x] it does stuff and has stuf

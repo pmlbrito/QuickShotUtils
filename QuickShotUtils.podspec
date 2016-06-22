@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QuickShotUtils'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QuickShotUtils.'
+  s.summary          = 'QuickShotUtils are a couple of utility Classes and extensions.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,14 +19,21 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+
+QuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.
+
+Features
+- [x] it does stuff and has stuf
+- [x] decouples some other stuf
+
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/QuickShotUtils'
+  s.homepage         = 'https://github.com/pmlbrito/QuickShotUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Pedro Brito' => 'pedro.brito@premium-minds.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/QuickShotUtils.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Pedro Brito' => 'pedroml.brito@gmail.com' }
+  s.source           = { :git => 'https://github.com/pmlbrito/QuickShotUtils.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://medium.com/@pedroml.brito'
 
   s.ios.deployment_target = '8.0'
 

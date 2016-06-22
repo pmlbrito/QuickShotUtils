@@ -1,0 +1,22 @@
+{
+  "name": "QuickShotUtils",
+  "version": "0.1.0",
+  "summary": "A short description of QuickShotUtils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QuickShotUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Pedro Brito": "pedro.brito@premium-minds.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QuickShotUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QuickShotUtils/Classes/**/*"
+}

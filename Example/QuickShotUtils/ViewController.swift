@@ -11,34 +11,26 @@ import QuickShotUtils
 
 class ViewController: UIViewController {
 
-  var isBlinking = false
-  let blinkingLabel = BlinkingLabel(frame: CGRectMake(10, 20, 200, 30))
+  let valLabel = UILabel(frame: CGRectMake(10, 20, 200, 30))
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Setup the BlinkingLabel
-    blinkingLabel.text = "I blink!"
-    blinkingLabel.font = UIFont.systemFontOfSize(20)
-    view.addSubview(blinkingLabel)
-    blinkingLabel.startBlinking()
-    isBlinking = true
+    valLabel.text = "\(CGFloat.random().roundToDecimals(2))";
+    valLabel.font = UIFont.systemFontOfSize(20)
+    view.addSubview(valLabel)
     
     // Create a UIButton to toggle the blinking
     let toggleButton = UIButton(frame: CGRectMake(10, 60, 125, 30))
-    toggleButton.setTitle("Toggle Blinking", forState: .Normal)
+    toggleButton.setTitle("Toggle value", forState: .Normal)
     toggleButton.setTitleColor(UIColor.redColor(), forState: .Normal)
-    toggleButton.addTarget(self, action: "toggleBlinking", forControlEvents: .TouchUpInside)
+    toggleButton.addTarget(self, action: #selector(ViewController.toggleLabelValue), forControlEvents: .TouchUpInside)
     view.addSubview(toggleButton)
   }
   
-  func toggleBlinking() {
-    if (isBlinking) {
-      blinkingLabel.stopBlinking()
-    } else {
-      blinkingLabel.startBlinking()
-    }
-    isBlinking = !isBlinking
+  func toggleLabelValue() {
+    valLabel.text = "\(CGFloat.random().roundToDecimals(2))";
   }
 
     override func didReceiveMemoryWarning() {

@@ -38,6 +38,8 @@ Features
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'QuickShotUtils/Classes/**/*'
+
+  s.requires_arc = true
   
   # s.resource_bundles = {
   #   'QuickShotUtils' => ['QuickShotUtils/Assets/*.png']

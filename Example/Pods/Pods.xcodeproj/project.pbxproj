@@ -34,13 +34,13 @@
 		423606B71D1AB6C600808990 /* UIView+QSUAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606B61D1AB6C600808990 /* UIView+QSUAdditions.swift */; };
 		423606B91D1AB6DE00808990 /* UIViewController+QSUAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606B81D1AB6DE00808990 /* UIViewController+QSUAdditions.swift */; };
 		423606BB1D1AB71900808990 /* UINavigationController+QSUAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606BA1D1AB71900808990 /* UINavigationController+QSUAdditions.swift */; };
-		423606BE1D1AB7D200808990 /* QSUFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606BD1D1AB7D200808990 /* QSUFloatingLabelTextField.swift */; };
 		423606C11D1AB96500808990 /* isNilOrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606C01D1AB96500808990 /* isNilOrEmpty.swift */; };
 		423606C31D1AB9F000808990 /* QSUDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606C21D1AB9F000808990 /* QSUDeviceExtension.swift */; };
 		423606C51D1ABA2D00808990 /* QSUTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606C41D1ABA2D00808990 /* QSUTimeUtils.swift */; };
 		423606C71D1ABA6800808990 /* QSUPlistUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423606C61D1ABA6800808990 /* QSUPlistUtils.swift */; };
 		423607291D1AD17A00808990 /* QSUBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423607281D1AD17A00808990 /* QSUBaseViewController.swift */; };
 		4236072B1D1AD1E000808990 /* QSUBasicLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4236072A1D1AD1E000808990 /* QSUBasicLoadingIndicator.swift */; };
+		428D313E1D26CF84007C9BCC /* QSUFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D313C1D26CF7B007C9BCC /* QSUFloatingLabelTextField.swift */; };
 		47CBCE8837CE75AE1B7484A63CE387ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
 		486B74C8EFEB68AD25CE128F3051E432 /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129290F935182407C183EB04C0C2C90 /* ObjCExpectation.swift */; };
 		4AF6C26A30D865059C24DC5317786B76 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2748FABD1661E3A75F8B07E115CF96 /* BeNil.swift */; };
@@ -182,13 +182,13 @@
 		423606B61D1AB6C600808990 /* UIView+QSUAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+QSUAdditions.swift"; sourceTree = "<group>"; };
 		423606B81D1AB6DE00808990 /* UIViewController+QSUAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+QSUAdditions.swift"; sourceTree = "<group>"; };
 		423606BA1D1AB71900808990 /* UINavigationController+QSUAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+QSUAdditions.swift"; sourceTree = "<group>"; };
-		423606BD1D1AB7D200808990 /* QSUFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		423606C01D1AB96500808990 /* isNilOrEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = isNilOrEmpty.swift; sourceTree = "<group>"; };
 		423606C21D1AB9F000808990 /* QSUDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUDeviceExtension.swift; sourceTree = "<group>"; };
 		423606C41D1ABA2D00808990 /* QSUTimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUTimeUtils.swift; sourceTree = "<group>"; };
 		423606C61D1ABA6800808990 /* QSUPlistUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUPlistUtils.swift; sourceTree = "<group>"; };
 		423607281D1AD17A00808990 /* QSUBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUBaseViewController.swift; sourceTree = "<group>"; };
 		4236072A1D1AD1E000808990 /* QSUBasicLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUBasicLoadingIndicator.swift; sourceTree = "<group>"; };
+		428D313C1D26CF7B007C9BCC /* QSUFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSUFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		45696CAE8C62C30C1519C37C3DD73F65 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4589E628D11C505BE60FEE386B6DA945 /* Pods-QuickShotUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickShotUtils_Example-dummy.m"; sourceTree = "<group>"; };
 		45D3661DD977D936FA0FEA7FDE08D852 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Sources/Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
@@ -456,7 +456,6 @@
 			children = (
 				423607271D1AD14C00808990 /* Views */,
 				423607261D1AD13F00808990 /* ViewControllers */,
-				423606BD1D1AB7D200808990 /* QSUFloatingLabelTextField.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -483,6 +482,7 @@
 		423607271D1AD14C00808990 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				428D313C1D26CF7B007C9BCC /* QSUFloatingLabelTextField.swift */,
 				4236072A1D1AD1E000808990 /* QSUBasicLoadingIndicator.swift */,
 			);
 			path = Views;
@@ -929,10 +929,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				423606BB1D1AB71900808990 /* UINavigationController+QSUAdditions.swift in Sources */,
+				428D313E1D26CF84007C9BCC /* QSUFloatingLabelTextField.swift in Sources */,
 				423606B31D1AB64400808990 /* UIColor+QSUAdditions.swift in Sources */,
 				02467392428E1D03F8B2A31FA153EA93 /* QuickShotUtils-dummy.m in Sources */,
 				423606B11D1AB59800808990 /* String+QSUAdditions.swift in Sources */,
-				423606BE1D1AB7D200808990 /* QSUFloatingLabelTextField.swift in Sources */,
 				423606AF1D1AB3E400808990 /* Math+QSUAdditions.swift in Sources */,
 				423606C51D1ABA2D00808990 /* QSUTimeUtils.swift in Sources */,
 				423606B71D1AB6C600808990 /* UIView+QSUAdditions.swift in Sources */,

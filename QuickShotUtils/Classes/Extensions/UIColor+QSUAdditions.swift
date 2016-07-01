@@ -35,7 +35,7 @@ public extension UIColor {
     return nil
   }
   
-  func toHexString() -> String {
+  public func toHexString() -> String {
     var r:CGFloat = 0
     var g:CGFloat = 0
     var b:CGFloat = 0
@@ -48,7 +48,7 @@ public extension UIColor {
     return NSString(format:"#%06x", rgb) as String
   }
   
-  func imageWithColor(size: CGSize = CGSizeMake(60, 60)) -> UIImage {
+  public func imageWithColor(size: CGSize = CGSizeMake(60, 60)) -> UIImage {
     let rect = CGRectMake(0, 0, size.width, size.height)
     UIGraphicsBeginImageContext(rect.size)
     let context = UIGraphicsGetCurrentContext()

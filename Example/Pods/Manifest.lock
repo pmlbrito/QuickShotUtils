@@ -1,22 +1,22 @@
 PODS:
-  - Nimble (3.2.0)
-  - Quick (0.9.2)
-  - QuickShotUtils (0.1.0)
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+  - QuickShotUtils (0.2.0)
 
 DEPENDENCIES:
-  - Nimble (~> 3.0)
-  - Quick (~> 0.8)
+  - Nimble
+  - Quick
   - QuickShotUtils (from `../`)
 
 EXTERNAL SOURCES:
   QuickShotUtils:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
-  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
-  QuickShotUtils: e926858144795f4e6e420f33828677559f8ae817
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  QuickShotUtils: 2c60abe5f4e291b6c12c871eaea48f691f47d82c
 
-PODFILE CHECKSUM: 485fd1963cb32da4518a2547c23ae711d4f7e35f
+PODFILE CHECKSUM: 6e8ce6ef8a6231026fa149b3c68083ca22bed85b
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.1

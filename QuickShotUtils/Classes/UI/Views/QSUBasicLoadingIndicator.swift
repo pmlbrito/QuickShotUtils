@@ -21,15 +21,16 @@ public class QSUBasicLoadingIndicator{
   }
   
   private init(){
-    let window = UIApplication.sharedApplication().windows.first!
+    let window = UIApplication.shared.windows.first!
     overlayView = UIView(frame: window.frame);
-    overlayView?.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8);
+    overlayView?.backgroundColor = UIColor.black.withAlphaComponent(0.8);
     overlayView?.clipsToBounds = true
     
-    activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 40, 40))
-    activityIndicator?.activityIndicatorViewStyle = .WhiteLarge
-    activityIndicator?.center = CGPointMake((overlayView?.bounds.width)! / 2, (overlayView?.bounds.height)! / 2)
-    activityIndicator?.color = UIColor.whiteColor();
+    activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+    activityIndicator?.activityIndicatorViewStyle = .whiteLarge
+    activityIndicator?.centerX = window.frame.size.width/2
+    activityIndicator?.centerY = window.frame.size.height/2
+    activityIndicator?.color = UIColor.white;
     
     overlayView!.addSubview(activityIndicator!)
   }
@@ -43,11 +44,11 @@ public class QSUBasicLoadingIndicator{
     //    activityIndicator!.startAnimating()
     
     //with animations
-    let window = UIApplication.sharedApplication().windows.first!
-    window.addSubview(self.overlayView!)
+    let window = UIApplication.shared.windows.first
+    window?.addSubview(self.overlayView!)
     self.activityIndicator!.startAnimating()
     
-    UIView.animateWithDuration(0.3, delay: 0.0, options: .CurveEaseInOut, animations: {
+    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut, animations: {
       self.overlayView!.alpha = 0.8
       }, completion: { finished in
     })
@@ -59,7 +60,7 @@ public class QSUBasicLoadingIndicator{
     //    overlayView!.removeFromSuperview()
     
     //with animations
-    UIView.animateWithDuration(0.3, delay: 0.0, options: .CurveEaseInOut, animations: {
+    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut, animations: {
       self.overlayView!.alpha = 0.0
       }, completion: { finished in
         self.activityIndicator!.stopAnimating()

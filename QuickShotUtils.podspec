@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickShotUtils'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'QuickShotUtils are a couple of iOS Swift utility Classes and extensions.'
 
 # This description is used to generate tags and improve search results.
@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
 
 QuickShotUtils are a couple of iOS Swift Classes and extensions that add some specific quick custom behaviour to already existing code base.
+This project is now migrated to Swift 3.
 
 Features
 - [x] it does stuff and has stuf
@@ -46,6 +47,6 @@ Features
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

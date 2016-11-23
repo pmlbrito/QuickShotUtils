@@ -28,11 +28,11 @@ public extension UIView {
   }
   
   var centerX : CGFloat {
-    set { self.center = CGPointMake(newValue, self.center.y) }
+    set { self.center = CGPoint(x: newValue, y: self.center.y) }
     get { return self.center.x }
   }
   var centerY : CGFloat {
-    set { self.center = CGPointMake(self.center.x, newValue) }
+    set { self.center = CGPoint(x: self.center.x, y: newValue) }
     get { return self.center.y }
   }
   
@@ -61,8 +61,8 @@ public extension UIView {
     self.centerY = contentView.height/2
   }
   func centerInView(contentView: UIView) {
-    self.centerXInView(contentView)
-    self.centerYInView(contentView)
+    self.centerXInView(contentView: contentView)
+    self.centerYInView(contentView: contentView)
   }
   
   func removeAllSubviews() {

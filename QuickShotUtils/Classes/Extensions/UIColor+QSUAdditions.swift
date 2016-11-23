@@ -13,14 +13,14 @@ public extension UIColor {
     let r, g, b, a: CGFloat
     
     if hexString.hasPrefix("#") {
-      let start = hexString.startIndex.advancedBy(1)
-      let hexColor = hexString.substringFromIndex(start)
+        let start = hexString.index(hexString.startIndex, offsetBy:1)
+      let hexColor = hexString.substring(from: start)
       
       if hexColor.characters.count == 8 {
-        let scanner = NSScanner(string: hexColor)
+        let scanner = Scanner(string: hexColor)
         var hexNumber: UInt64 = 0
         
-        if scanner.scanHexLongLong(&hexNumber) {
+        if scanner.scanHexInt64(&hexNumber) {
           r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
           g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
           b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
@@ -48,19 +48,19 @@ public extension UIColor {
     return NSString(format:"#%06x", rgb) as String
   }
   
-  public func imageWithColor(size: CGSize = CGSizeMake(60, 60)) -> UIImage {
-    let rect = CGRectMake(0, 0, size.width, size.height)
+    public func imageWithColor(size: CGSize = CGSize(width: 60, height: 60)) -> UIImage {
+    let rect = CGRect(x: 0, y:0, width: size.width, height: size.height)
     UIGraphicsBeginImageContext(rect.size)
     let context = UIGraphicsGetCurrentContext()
     
-    CGContextSetFillColorWithColor(context, self.CGColor);
-    CGContextFillRect(context, rect);
+    context!.setFillColor(self.cgColor);
+    context!.fill(rect);
     
     let image = UIGraphicsGetImageFromCurrentImageContext()
     
     UIGraphicsEndImageContext();
     
-    return image;
+    return image!;
   }
   
   static func randomColor() -> UIColor {

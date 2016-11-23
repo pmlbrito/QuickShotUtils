@@ -1,7 +1,7 @@
 PODS:
   - Nimble (5.1.1)
   - Quick (1.0.0)
-  - QuickShotUtils (0.1.0)
+  - QuickShotUtils (0.2.0)
 
 DEPENDENCIES:
   - Nimble
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
-  QuickShotUtils: 400a91f9b43bd9a3b330cbd2d8d91a333731d939
+  QuickShotUtils: 2c60abe5f4e291b6c12c871eaea48f691f47d82c
 
 PODFILE CHECKSUM: 6e8ce6ef8a6231026fa149b3c68083ca22bed85b
 

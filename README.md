@@ -6,6 +6,7 @@
 <!--[![Platform](https://img.shields.io/cocoapods/p/QuickShotUtils.svg?style=flat)](http://cocoapods.org/pods/QuickShotUtils)-->
  
  QuickShotUtils are a couple of Classes and extensions that add some specific quick custom behaviour to already existing code base.
+ This project is now Swift 3 compliant.
  
  
 ## Utility extensions to:
@@ -44,7 +45,7 @@
  ```Swift
  import QuickShotUtils
  
- CGFloat.random().roundToDecimals(2)
+ CGFloat.random().round(toDecimals:2)
  ```
  
 ## Example Project

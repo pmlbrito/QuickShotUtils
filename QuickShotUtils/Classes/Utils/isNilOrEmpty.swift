@@ -13,9 +13,9 @@ import Foundation
  :param: collection Optional collection
  :returns: true if collection is nil or if it is an empty collection, false otherwise
  */
-public func isNilOrEmpty<C: CollectionType>(collection: C?) -> Bool {
+public func isNilOrEmpty<C: Collection>(collection: C?) -> Bool {
   switch collection {
-  case .Some(let nonNilCollection): return nonNilCollection.count == 0
+  case .some(let nonNilCollection): return nonNilCollection.count == 0
   default:                          return true
   }
 }
@@ -27,7 +27,7 @@ public func isNilOrEmpty<C: CollectionType>(collection: C?) -> Bool {
  */
 public func isNilOrEmpty(string: NSString?) -> Bool {
   switch string {
-  case .Some(let nonNilString): return nonNilString.length == 0
+  case .some(let nonNilString): return nonNilString.length == 0
   default:                      return true
   }
 }

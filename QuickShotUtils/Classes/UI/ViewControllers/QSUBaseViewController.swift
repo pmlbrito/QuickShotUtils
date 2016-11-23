@@ -13,7 +13,7 @@ public enum ViewControllerPresentationType: String {
   case PushStack, Modal, ReplaceNavigation, ReplaceAtRoot
 }
 
-public class QSUBaseViewController: UIViewController
+open class QSUBaseViewController: UIViewController
 {
   
   // MARK: Object lifecycle
@@ -34,7 +34,7 @@ public class QSUBaseViewController: UIViewController
   
   // MARK: View lifecycle
   
-  override public func viewDidLoad() {
+  override open func viewDidLoad() {
     super.viewDidLoad()
   }
   
@@ -48,13 +48,13 @@ public class QSUBaseViewController: UIViewController
   public func hideNavigationBar(hide : Bool) {
     let navBar = navigationController?.navigationBar;
     if navBar != nil {
-      navBar!.hidden = hide
+      navBar!.isHidden = hide
     }
   }
   
   
   public func hideNavigationBackButtonTitle() {
-    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
   }
   
   
@@ -72,21 +72,21 @@ public class QSUBaseViewController: UIViewController
         navigationController?.pushViewController(destinationViewController!, animated: true);
         break;
       case .Modal:
-        fromViewController.presentViewController(destinationViewController!, animated: true, completion: nil)
+        fromViewController.present(destinationViewController!, animated: true, completion: nil)
         break;
       case .ReplaceNavigation:
         let newNavigationController = UINavigationController(rootViewController: destinationViewController!);
         
-        let appWindow = UIApplication.sharedApplication().delegate?.window!
+        let appWindow = UIApplication.shared.delegate?.window!
         //animate swapping with nice transition
-        UIView.transitionWithView(appWindow!, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+        UIView.transition(with: appWindow!, duration: 0.5, options: UIViewAnimationOptions.transitionCrossDissolve, animations: { () -> Void in
           appWindow!.rootViewController = newNavigationController
           }, completion: nil);
         break
       case .ReplaceAtRoot:
-        let appWindow = UIApplication.sharedApplication().delegate?.window!
+        let appWindow = UIApplication.shared.delegate?.window!
         //animate swapping with nice transition
-        UIView.transitionWithView(appWindow!, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+        UIView.transition(with: appWindow!, duration: 0.5, options: UIViewAnimationOptions.transitionCrossDissolve, animations: { () -> Void in
           appWindow!.rootViewController = destinationViewController
           }, completion: nil);
         break;
@@ -115,7 +115,7 @@ public class QSUBaseViewController: UIViewController
   var backgroundImage: UIImageView?;
   public func setBackgroundView(imageName: String){
     //setup background
-    let screenSize: CGRect = UIScreen.mainScreen().bounds
+    let screenSize: CGRect = UIScreen.main.bounds
     
     backgroundImage = UIImageView(frame: screenSize);
     //    backgroundImage?.image = UIImage(named: imageName);
@@ -131,13 +131,13 @@ public class QSUBaseViewController: UIViewController
       backgroundImage!.image = UIImage(named: imageName);
     }
     //    backgroundImage!.translatesAutoresizingMaskIntoConstraints = false
-    self.view.insertSubview(backgroundImage!, atIndex: 0);
+    self.view.insertSubview(backgroundImage!, at: 0);
   }
   
-  public func doOpenURLIfPossible(urlToOpen: NSURL?){
-    if let url: NSURL = urlToOpen {
-      if UIApplication.sharedApplication().canOpenURL(url) {
-        UIApplication.sharedApplication().openURL(url);
+  public func doOpenURLIfPossible(urlToOpen: URL?){
+    if let url: URL = urlToOpen {
+      if UIApplication.shared.canOpenURL(url) {
+        UIApplication.shared.openURL(url);
       }
     }
   }

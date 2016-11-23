@@ -11,8 +11,8 @@ import Foundation
 public extension UIViewController {
   
   class func fromClassName(className : String) -> UIViewController {
-    var realClassName = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + className
-    realClassName = realClassName.stringByReplacingOccurrencesOfString(" ", withString: "_")
+    var realClassName = Bundle.main.infoDictionary!["CFBundleName"] as! String + "." + className
+    realClassName = realClassName.replacingOccurrences(of: " ", with: "_")
     let klass = NSClassFromString(realClassName) as! UIViewController.Type
     return klass.init()
   }

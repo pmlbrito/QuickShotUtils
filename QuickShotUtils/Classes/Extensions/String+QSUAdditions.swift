@@ -11,7 +11,7 @@ import Foundation
 public extension String {
   
   func trim() -> String {
-    return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
   }
   
   func contains(string: String) -> Bool {
@@ -21,7 +21,7 @@ public extension String {
     var s = self.characters.map{ $0 }
     let c = string.characters.map{ $0 }
     repeat {
-      if s.startsWith(c){
+      if s.starts(with: c){
         return true
       } else {
         s.removeFirst()

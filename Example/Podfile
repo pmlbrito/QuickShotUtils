@@ -7,6 +7,6 @@ target 'QuickShotUtils_Example' do
     inherit! :search_paths
 
     pod 'Quick'
-  pod 'Nimble'
+    pod 'Nimble'
   end
 end
